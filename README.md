@@ -16,6 +16,12 @@
 - **Lottie Animation**: Plays an engaging animation upon successful form submission. 🎉
 
 
+## 📺 Design Resolutions
+
+- This form is designed to be best viewed in 720p (HD) and 1080p (Full HD) resolutions. 📺
+- The design is **not mobile-friendly**, as the primary goal was to create a highly interactive validation demo with real-time updates rather than focusing on mobile responsiveness. 📏
+
+
 
 ## 🛠️ Technologies Used
 
