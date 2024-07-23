@@ -1,6 +1,8 @@
-# 💳 Interactive Credit Card Form
+💳 Interactive Credit Card Form
 
 This project is an interactive credit card form with live validation and dynamic display of card details. It's built using HTML, SCSS, and JavaScript.
+
+### This is 💪Front-End Challenge by https://www.frontendmentor.io/ & hand coded by 🧑 <a href="https://github.com/aakash-webdev">Aakash Peshavaria (Me)</a>
 
 ## ✨ Features
 
@@ -36,3 +38,6 @@ This project is an interactive credit card form with live validation and dynamic
 
 ## 🏆 Success Demo:
 ![image](https://github.com/user-attachments/assets/efba74e2-4487-4ce6-9ffb-3bd7d24738f7)
+
+## ℹ Here is the live link to this project:
+https://aakash-webdev.github.io/Interactive-Credit-Card-Form/
