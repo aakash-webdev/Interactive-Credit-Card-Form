@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--===== Google Fonts CDN =====-->
+
+    <!-- Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Zain -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zain:wght@200;300;400;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!--===== Font Awesome CDN =====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--===== CSS =====-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Main starts here -->
+    <main>
+        <div class="container">
+
+            <!-- Left section starts here -->
+            <div class="left_section">
+                <div class="cards">
+
+                    <div class="front_card">
+                        <img src="assets/images/card-front.png" alt="Front card">
+
+                        <div class="front_card_name">
+                            <h2 id="num">0000 0000 0000 0000</h2>
+                        </div>
+
+                        <div class="card_details">
+
+                            <h3 id="name">Joe Biden</h3>
+
+                            <h3 id="date">
+                                <span id="month">00</span>
+                                /
+                                <span id="year">00</span>
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                    <div class="back_card">
+                        <img src="assets/images/bg-card-back.png" alt="Back card">
+                        <h3 id="cvc">000</h3>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Left section ends here -->
+
+            <!-- Right section starts here -->
+            <div class="right_section">
+
+                <form action="#" id="main_form" onsubmit="success()">
+
+                    <div class="block_1">
+                        <label for="cardholder_name">CARDHOLDER NAME</label>
+                        <input type="text" name="cardholder_name" id="cardholder_name" placeholder="e.g. Joe Biden"
+                            autocomplete="off">
+                        <div id="name_error" class="error"></div>
+                    </div>
+
+                    <div class="block_2">
+                        <label for="card_number">CARD NUMBER</label>
+                        <input type="text" name="card_number" id="card_number" placeholder="e.g. 1234 5678 9123 4567"
+                            autocomplete="off">
+                        <div class="error" id="number_error"></div>
+                    </div>
+
+                    <div class="block_3">
+                        <div class="block_3_left">
+                            <label for="exp_month_year">CARD EXPIRY</label>
+                            <div>
+                                <div>
+                                    <input type="text" name="exp_month" id="exp_month" placeholder="MM"
+                                        autocomplete="off">
+                                    <input type="text" name="exp_year" id="exp_year" placeholder="YYYY"
+                                        autocomplete="off">
+                                </div>
+                                <div class="error" id="month_error"></div>
+                                <div class="error" id="year_error"></div>
+                            </div>
+                        </div>
+                        <div class="block_3_right">
+                            <label for="card_cvc">CVC</label>
+                            <input type="text" name="cvc" id="card_cvc" placeholder="e.g. 123" autocomplete="off">
+                            <div class="error" id="cvc_error"></div>
+                        </div>
+                    </div>
+
+
+                    <button type="submit" id="submit_btn">CONFIRM</button>
+
+                </form>
+
+                <div class="success">
+                    <!-- Lottie Animation -->
+                    <dotlottie-player id="successAnimation"
+                        src="https://lottie.host/b0be2c82-dd20-4178-abf6-e7acae24f53d/v0LRK4Z8XK.json"
+                        background="transparent" speed="0.8" style="width: 300px; height: 300px;" autoplay
+                        loop></dotlottie-player>
+                    <h1>CONGRATULATIONS!</h1>
+                    <h2>Credit Card created.</h2>
+                </div>
+
+            </div>
+            <!-- Right section ends here -->
+
+        </div>
+    </main>
+    <!-- Main ends here -->
+
+
+
+
+
+    <!-- Lottie Animation Script-->
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+    <!--===== JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

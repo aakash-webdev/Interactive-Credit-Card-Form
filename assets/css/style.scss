@@ -1,0 +1,239 @@
+// Common SCSS Codes Starts //
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  display: inline-block;
+}
+
+$primary-front: "Space Grotesk", sans-serif;
+$secondary-font: "Zain", sans-serif;
+$label-color: #d64f94;
+$placeholer-color: #b6b6b6;
+$btn-color: #d58ac0;
+
+body {
+  font-family: $primary-front;
+}
+
+// Common SCSS Codes Ends //
+
+// ---------- Main SCSS Codes Starts ---------- //
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+
+  // SCSS Codes for left section
+  .left_section {
+    width: 30%;
+    font-family: $secondary-font;
+    background-image: url(../images/bg-main-desktop.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    // Front Card SCSS Starts //
+    .front_card {
+      position: absolute;
+      color: rgba(255, 255, 255, 0.773);
+      right: -80px;
+      top: 172px;
+
+      img {
+        border-radius: 12px;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+          0 15px 12px rgba(0, 0, 0, 0.22);
+      }
+
+      .front_card_name {
+        position: absolute;
+        bottom: 100px;
+        left: 8%;
+
+        #num {
+          font-size: 40px;
+          line-height: 46px;
+          font-weight: 400;
+          letter-spacing: 1px;
+        }
+      }
+
+      .card_details {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        bottom: 50px;
+
+        #name,
+        #date {
+          font-size: 25px;
+          padding: 0 20px;
+          line-height: 31px;
+          font-weight: 300;
+          margin: 10px 0 0 0;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    // Front Card SCSS Ends //
+
+    // Back Card SCSS Starts //
+    .back_card {
+      position: absolute;
+      right: -181px;
+      top: 454px;
+
+      img {
+        border-radius: 12px;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+          0 15px 12px rgba(0, 0, 0, 0.22);
+      }
+
+      #cvc {
+        position: absolute;
+        font-size: 26px;
+        letter-spacing: 2px;
+        color: rgba(255, 255, 255, 0.773);
+        bottom: 115px;
+        right: 54px;
+        line-height: 32px;
+      }
+    }
+
+    // Back Card SCSS Ends //
+  }
+
+  // SCSS Codes for right section
+  .right_section {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #main_form {
+      display: block;
+      width: 350px;
+
+      .block_1 {
+        margin: 25px 0;
+      }
+
+      .block_3 {
+        display: flex;
+        margin: 25px 0 40px;
+
+        .block_3_left {
+          margin-right: 30px;
+          width: 50%;
+
+          div div {
+            display: flex;
+
+            #exp_year {
+              margin: 0 5px;
+            }
+          }
+        }
+      }
+
+      #submit_btn {
+        letter-spacing: 1.5px;
+        width: 100%;
+        height: 40px;
+        color: #fff;
+        padding: 5px 10px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        overflow: hidden;
+        border-radius: 5px;
+        border: none;
+        background-color: $btn-color;
+
+        &:hover {
+          border-radius: 5px;
+          padding-right: 24px;
+          padding-left: 8px;
+        }
+
+        &:hover:after {
+          opacity: 1;
+          right: 20px;
+        }
+
+        &:after {
+          content: "\00BB";
+          position: absolute;
+          opacity: 0;
+          font-size: 20px;
+          line-height: 40px;
+          top: -2px;
+          right: -20px;
+          transition: 0.4s;
+        }
+      }
+    }
+
+    label {
+      display: block;
+      font-weight: 500;
+      color: $label-color;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 1px;
+      margin: 5px 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 2px solid #d7d7d7;
+      font-family: $primary-front;
+
+      &:focus {
+        outline: none;
+        border: 2px solid $btn-color;
+      }
+    }
+
+    .error {
+      color: #ff0000;
+      font-size: 12px;
+      margin: 5px 0;
+      font-weight: 600;
+      letter-spacing: 1px;
+      line-height: 18px;
+    }
+
+    .success {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      color: $label-color;
+
+      h1 {
+        font-size: 40px;
+        text-align: center;
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+}
+// ---------- Main SCSS Codes Ends ---------- //

@@ -1,0 +1,190 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  display: inline-block;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .left_section {
+  width: 30%;
+  font-family: "Zain", sans-serif;
+  background-image: url(../images/bg-main-desktop.png);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.container .left_section .front_card {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.773);
+  right: -80px;
+  top: 172px;
+}
+.container .left_section .front_card img {
+  border-radius: 12px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.container .left_section .front_card .front_card_name {
+  position: absolute;
+  bottom: 100px;
+  left: 8%;
+}
+.container .left_section .front_card .front_card_name #num {
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.container .left_section .front_card .card_details {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 50px;
+}
+.container .left_section .front_card .card_details #name,
+.container .left_section .front_card .card_details #date {
+  font-size: 25px;
+  padding: 0 20px;
+  line-height: 31px;
+  font-weight: 300;
+  margin: 10px 0 0 0;
+  letter-spacing: 1px;
+}
+.container .left_section .back_card {
+  position: absolute;
+  right: -181px;
+  top: 454px;
+}
+.container .left_section .back_card img {
+  border-radius: 12px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.container .left_section .back_card #cvc {
+  position: absolute;
+  font-size: 26px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.773);
+  bottom: 115px;
+  right: 54px;
+  line-height: 32px;
+}
+.container .right_section {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .right_section #main_form {
+  display: block;
+  width: 350px;
+}
+.container .right_section #main_form .block_1 {
+  margin: 25px 0;
+}
+.container .right_section #main_form .block_3 {
+  display: flex;
+  margin: 25px 0 40px;
+}
+.container .right_section #main_form .block_3 .block_3_left {
+  margin-right: 30px;
+  width: 50%;
+}
+.container .right_section #main_form .block_3 .block_3_left div div {
+  display: flex;
+}
+.container .right_section #main_form .block_3 .block_3_left div div #exp_year {
+  margin: 0 5px;
+}
+.container .right_section #main_form #submit_btn {
+  letter-spacing: 1.5px;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #d58ac0;
+}
+.container .right_section #main_form #submit_btn:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left: 8px;
+}
+.container .right_section #main_form #submit_btn:hover:after {
+  opacity: 1;
+  right: 20px;
+}
+.container .right_section #main_form #submit_btn:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: -2px;
+  right: -20px;
+  transition: 0.4s;
+}
+.container .right_section label {
+  display: block;
+  font-weight: 500;
+  color: #d64f94;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+.container .right_section input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #d7d7d7;
+  font-family: "Space Grotesk", sans-serif;
+}
+.container .right_section input:focus {
+  outline: none;
+  border: 2px solid #d58ac0;
+}
+.container .right_section .error {
+  color: #ff0000;
+  font-size: 12px;
+  margin: 5px 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 18px;
+}
+.container .right_section .success {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  color: #d64f94;
+}
+.container .right_section .success h1 {
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 1.5px;
+}/*# sourceMappingURL=style.css.map */
